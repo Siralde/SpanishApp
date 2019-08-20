@@ -1,20 +1,36 @@
-<ion-toolbar>
-    <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
+<ion-header>
   
-      <ion-content>
-        <ion-list>
-          <ion-menu-toggle auto-hide="true" *ngFor="let p of appPages">
-            <!-- <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{ p.title }}
-              </ion-label>
-            </ion-item> -->
-          </ion-menu-toggle>
-        </ion-list>
-      </ion-content>
-</ion-toolbar>
+  <ion-grid>
+    
+    <ion-row>
+    
+      <ion-col>
+   
+        <ion-menu menuId="first" contentId="content1" >
+          <ion-header>
+            <ion-toolbar color="danger">
+              <ion-title>Start Menu</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <ion-list>
+              <ion-item>Menu Item</ion-item>
+              <ion-item>Menu Item</ion-item>
+              <ion-item>Menu Item</ion-item>
+              <ion-item>Menu Item</ion-item>
+              <ion-item>Menu Item</ion-item>
+            </ion-list>
+          </ion-content>
+        </ion-menu>
+        
+      </ion-col>
+
+      <ion-col>
+        <app-logo></app-logo>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-header>
