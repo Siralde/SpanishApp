@@ -9,9 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
+import { DesktopHeaderComponent } from './components/header/desktop-header/desktop-header.component';
+import { MobilewebHeaderComponent } from './components/header/mobileweb-header/mobileweb-header.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, DesktopHeaderComponent, MobilewebHeaderComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
