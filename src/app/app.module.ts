@@ -8,14 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
-import { MobilewebHeaderComponent } from './components/header/mobileweb-header/mobileweb-header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { DesktopHeaderComponent } from './components/header/desktop-header/desktop-header.component';
-import { LogoComponent } from './components/header/logo/logo.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, MobilewebHeaderComponent, DesktopHeaderComponent, LogoComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
