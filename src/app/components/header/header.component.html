@@ -1,9 +1,2 @@
-<!-- <ion-header>
-    <ion-toolbar>
-        <ion-title>Hello</ion-title>
-    </ion-toolbar>
-</ion-header> -->
-
-
-<!-- <app-desktop-header></app-desktop-header> -->
-<app-mobileweb-header></app-mobileweb-header>
+<app-mobileweb-header *ngIf="isPhone === false"></app-mobileweb-header>
+<app-desktop-header *ngIf="isDesktop"></app-desktop-header>
