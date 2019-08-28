@@ -7,43 +7,43 @@
       <ion-row>
       
         <ion-col>
-
-          <h1>DesktopHeader</h1>
-
+        
+            <h1 [routerLink]="['home']">DesktopHeader</h1>
+          
         </ion-col>
 
         <!-- Navigators Icons -->
         <ion-col>
-        
-          <ion-grid>
 
-            <ion-row>
+          <ion-segment color="tertiary">
 
-              <ion-col>
-                <ion-item [routerLink]="['lessons']">
-                  <ion-icon name="cafe"></ion-icon>
-                  <ion-label>Fist</ion-label>
-                </ion-item>
-              </ion-col>
-              
-              <ion-col>
-                <ion-item>
-                  <ion-icon name="cafe"></ion-icon>
-                  <ion-label>Second</ion-label>
-                </ion-item>
-              </ion-col>
-              
-              <ion-col>
-                <ion-item>
-                  <ion-icon name="cafe"></ion-icon>
-                  <ion-label>Third</ion-label>
-                </ion-item>
-              </ion-col>
+            <ion-segment-button [routerLink]="['teacher-info']">
+              <ion-label color="tertiary">Your Teacher</ion-label>
+              <ion-icon color="tertiary" name="cafe"></ion-icon>
+            </ion-segment-button>
+
+            <ion-segment-button [routerLink]="['lessons']">
+              <ion-label color="tertiary">Lessons</ion-label>
+              <ion-icon color="tertiary" name="cafe"></ion-icon>
+            </ion-segment-button>
             
-            </ion-row>
+            <ion-segment-button [routerLink]="['testimonials']">
+              <ion-label color="tertiary">Testimonials</ion-label>
+              <ion-icon color="tertiary" name="cafe"></ion-icon>
+            </ion-segment-button>
+          
+            <ion-segment-button [routerLink]="['buy-lessons']">
+              <ion-label color="tertiary">Buy Lessons</ion-label>
+              <ion-icon  color="tertiary"name="cafe"></ion-icon>
+            </ion-segment-button>
 
-          </ion-grid>
-        
+            <ion-segment-button [routerLink]="['contact']">
+              <ion-label color="tertiary">Contact</ion-label>
+              <ion-icon color="tertiary" name="cafe"></ion-icon>
+            </ion-segment-button>
+          
+          </ion-segment>
+
         </ion-col>
 
       </ion-row>
